@@ -1,0 +1,6 @@
+build/
+asahi
+
+*.o
+*.a
+*.so

@@ -1,0 +1,10 @@
+CROSS_COMPILE =
+CC = ${CROSS_COMPILE}gcc
+CCFLAGS = -g
+
+SRCS = main.c
+
+TARGET = asahi
+
+${TARGET}: ${SRCS}
+	${CC} ${CCFLAGS} ${SRCS} -o ${TARGET}
