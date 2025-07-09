@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
         printf("Usage:\n");
         printf("new\t-\tCreate project\n");
         printf("build\t-\tBuild project\n");
-        printf("config\t-\tConfigure project options");
+        printf("config\t-\tConfigure project options\n");
         return 1;
     }
 
