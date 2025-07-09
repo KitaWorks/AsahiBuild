@@ -3,24 +3,25 @@
 
 #include "version.h"
 
-int main(int argv, char *argc[]) {
-    char *filename = argc[1];
+int main(int argc, char *argv[]) {
+    char *filename = argv[1];
 
-    if (!argc[1]) {
+    if (!argv[1]) {
         printf("AsahiBuild Version %s\n", VERSION);
-        printf(" %s <action>\n", argc[0]);
+        printf(" %s <action>\n", argv[0]);
         printf("Usage:\n");
         printf("new\t-\tCreate project\n");
         printf("build\t-\tBuild project\n");
         printf("config\t-\tConfigure project options");
+        return 1;
     }
 
-    if (strcmp(argc[1], "new") == 0) {
-        char *project_name = argc[2];
+    if (strcmp(argv[1], "new") == 0) {
+        char *project_name = argv[2];
         // TODO: new project
-    } else if (strcmp(argc[1], "build") == 0) {
+    } else if (strcmp(argv[1], "build") == 0) {
         // TODO: build project
-    } else if (strcmp(argc[1], "config") == 0) {
+    } else if (strcmp(argv[1], "config") == 0) {
         // TODO: config
     }
 
