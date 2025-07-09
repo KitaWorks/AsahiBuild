@@ -27,6 +27,8 @@ int main(int argc, char *argv[]) {
     // TODO: build project
   } else if (strcmp(argv[1], "config") == 0) {
     // TODO: config
+  } else {
+    printf("Action not exist.\n");
   }
 
   return 0;
