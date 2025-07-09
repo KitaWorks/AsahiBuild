@@ -1,15 +1,22 @@
 CROSS_COMPILE =
 CC = ${CROSS_COMPILE}gcc
-CCFLAGS = -g
+CFLAGS = -g
+LDFLAGS =
 
 SRCS = main.c
+OBJS = ${patsubst %.c,%.o,${SRCS}}
 
 TARGET = asahi
 
-${TARGET}: ${SRCS}
-	${CC} ${CCFLAGS} ${SRCS} -o ${TARGET}
+all: ${TARGET}
+
+${TARGET}: ${OBJS}
+	${CC} ${CFLAGS} ${OBJS} -o $@ ${LDFLAGS}
+
+%.o: %.c Makefile
+	${CC} ${CFLAGS} -c -o $@ $<
 
 clean:
-	rm ${TARGET}
+	@rm -rf ${TARGET} ${OBJS}
 
 .PHONY = clean
