@@ -8,3 +8,8 @@ TARGET = asahi
 
 ${TARGET}: ${SRCS}
 	${CC} ${CCFLAGS} ${SRCS} -o ${TARGET}
+
+clean:
+	rm ${TARGET}
+
+.PHONY = clean
