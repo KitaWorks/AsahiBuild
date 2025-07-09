@@ -8,7 +8,7 @@ int main(int argv, char *argc[]) {
 
     if (!argc[1]) {
         printf("AsahiBuild Version %s\n", VERSION);
-        printf(" %s <action>", argc[0]);
+        printf(" %s <action>\n", argc[0]);
         printf("Usage:\n");
         printf("new\t-\tCreate project\n");
         printf("build\t-\tBuild project\n");
