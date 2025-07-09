@@ -18,9 +18,9 @@ int main(int argv, char *argc[]) {
     if (strcmp(argc[1], "new") == 0) {
         char *project_name = argc[2];
         // TODO: new project
-    } else (strcmp(argc[1], "build") == 0) {
+    } else if (strcmp(argc[1], "build") == 0) {
         // TODO: build project
-    } else (strcmp(argc[1], "config") == 0) {
+    } else if (strcmp(argc[1], "config") == 0) {
         // TODO: config
     }
 
