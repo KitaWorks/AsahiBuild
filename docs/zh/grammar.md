@@ -3,6 +3,7 @@
 一个 `project.asahi` 文件的格式：
 
 ```AsahiBuild
+# project.asahi
 project := "name";
 version := (0, 1, 0);
 src := ["main.c"]
